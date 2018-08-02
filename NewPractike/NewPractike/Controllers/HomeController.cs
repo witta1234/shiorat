@@ -8,16 +8,15 @@ using NewPractike.Models;
 
 namespace NewPractike.Controllers
 {
+    [Route("api")]
     public class HomeController : Controller
     {
-        [Route("api")]
-        //[HttpGet()]
+        
+        [HttpGet()]
         public IActionResult GetDay()
-        {
-            return Ok(DayContext.Current.Days);
+        {   
+            return View(DayContext.Current.Days);
         }
-
-        //[HttpGet("{id}")]
         public IActionResult GetOneDay(int id)
         {
             var DaytoReturn = DayContext.Current.Days.FirstOrDefault(c => c.Id == id);
@@ -25,14 +24,18 @@ namespace NewPractike.Controllers
             { return NotFound(); }
             return Ok(DaytoReturn);
         }
-        //[HttpDelete("delete/{id}")]
-        //[HttpPut("update/{id}")]        
-        //[HttpPost("add/{id}")]
+        [HttpDelete("delete/{id}")]
+        //[HttpPut("update/{id}")]
+        [HttpGet("addend")]
+        public IActionResult AddDay()
+        {
+            return View();
+        }
 
-        [Route("test")]
+        [HttpGet("test")]
         public IActionResult Test()
         {
-            return Content("Hello");
+            return View();
         }
     }
 }

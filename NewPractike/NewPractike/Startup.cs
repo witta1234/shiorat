@@ -44,10 +44,10 @@ namespace NewPractike
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
-                app.UseHsts();
+                app.UseExceptionHandler();
+                
             }
-
+            app.UseStatusCodePages();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();

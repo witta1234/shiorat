@@ -17,10 +17,18 @@ namespace NewPractike
                 new DaysDTO()
                 {
                     Id=1,
-            Date = new DateTime(2018,08,01),
-            Target = "Разработка проекта",
-
-        }
+                    Date = new DateTime(2018,08,01),
+                    Target = "Разработка проекта",
+                    V=1,
+                },
+                new DaysDTO()
+                {
+                    Id=2,
+                    Date = new DateTime(2018,08,02),
+                    Target = "Тест",
+                    V=0,
+                }
+                
             };
         }
     }

@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewData["Title"] = "GetDay";
+}
+
+
+<head>
+    <title>Список дел</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Дата</td>
+            <td>Цель</td>
+            <td></td>
+        </tr>
+        @foreach (var days in Model)
+        {
+        <tr>
+            <td>
+                @if (days.V == 0)
+                {@days.Date}
+                @if (days.V == 1)
+                {<font color="green">@days.Date</font>}
+                @if (days.V == 2)
+                {<font color="red">@days.Date</font>}
+            </td>
+            <td>
+                @if (days.V == 0)
+                {@days.Target}
+                @if (days.V == 1)
+                {<font color="green">@days.Target</font>}
+                @if (days.V == 2)
+                {<font color="red">@days.Target</font>}
+            </td>
+            <td><button>Удалить цель</button></td>
+            <td><button>Цель выполнена</button></td>
+            <td><button>Цель не выполнена</button></td>
+        </tr>
+        }
+    </table>
+    <button>Добавить цель</button>
+    
+    <button>Очистить список</button>
+</body>
