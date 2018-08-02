@@ -12263,11 +12263,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Витя\\source\\repos\\Practice\\Practice\\Practice.csproj",
+      "projectUniqueName": "C:\\Users\\Витя\\shiorat\\Practice\\Practice\\Practice.csproj",
       "projectName": "Practice",
-      "projectPath": "C:\\Users\\Витя\\source\\repos\\Practice\\Practice\\Practice.csproj",
+      "projectPath": "C:\\Users\\Витя\\shiorat\\Practice\\Practice\\Practice.csproj",
       "packagesPath": "C:\\Users\\Витя\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Витя\\source\\repos\\Practice\\Practice\\obj\\",
+      "outputPath": "C:\\Users\\Витя\\shiorat\\Practice\\Practice\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
