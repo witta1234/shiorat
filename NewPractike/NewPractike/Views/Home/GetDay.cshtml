@@ -33,9 +33,16 @@
                 @if (days.V == 2)
                 {<font color="red">@days.Target</font>}
             </td>
-            <td><button>Удалить цель</button></td>
-            <td><button>Цель выполнена</button></td>
-            <td><button>Цель не выполнена</button></td>
+            <td>
+                <script>
+                    function check(f) {
+                                        if (@days.Target >= @DateTime.Now) disabled = 1     
+                                        else disabled = 0
+                                       }
+                </script>       
+                <p><input type="checkbox" name="V" value="0" disabled> Выполнено</p>
+            </td>
+            <td><button disabled> Редактировать </button></td>
         </tr>
         }
     </table>

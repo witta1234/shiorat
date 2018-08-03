@@ -25,8 +25,12 @@ namespace NewPractike.Controllers
             return Ok(DaytoReturn);
         }
         [HttpDelete("delete/{id}")]
-        //[HttpPut("update/{id}")]
-        [HttpGet("addend")]
+        [HttpGet("update/{id}")]
+        public IActionResult Update(int id)
+        {
+            return View(DayContext.Current.Days);
+        }
+        [HttpGet("add")]
         public IActionResult AddDay()
         {
             return View();
