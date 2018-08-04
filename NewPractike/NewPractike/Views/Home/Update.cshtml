@@ -8,12 +8,17 @@
 </head>
 <bode>
     Редактирование цели
-    <form>
-        <input type="date" name="Date" value="">
-        <input type="time" name="Time" value="">
-        <input type="text" name="Target" value="" size="20" maxlength="300">
-    </form>
-    <button>Продолжить</button>
-    <button>Отмена</button>
-</bode>
+    @using (Html.BeginForm("Endupdate", "Home", FormMethod.Post))
+    {
+        <input type="datetime" name="Date" value="@Model.Date">
+        <input type="text" name="Target" value="@Model.Target" size="20" maxlength="300">
+
+
+            <button>Продолжить</button>
+        }
+        <form method="get" action="/api">
+            <button>Отмена</button>
+        </form>
+        
+    </bode>
 

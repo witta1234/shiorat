@@ -36,7 +36,6 @@ C:\Users\Витя\shiorat\NewPractike\NewPractike\bin\Debug\netcoreapp2.1\NewPra
 C:\Users\Витя\shiorat\NewPractike\NewPractike\bin\Debug\netcoreapp2.1\NewPractike.pdb
 C:\Users\Витя\shiorat\NewPractike\NewPractike\bin\Debug\netcoreapp2.1\NewPractike.Views.dll
 C:\Users\Витя\shiorat\NewPractike\NewPractike\bin\Debug\netcoreapp2.1\NewPractike.Views.pdb
-C:\Users\Витя\shiorat\NewPractike\NewPractike\obj\Debug\netcoreapp2.1\NewPractike.csprojAssemblyReference.cache
 C:\Users\Витя\shiorat\NewPractike\NewPractike\obj\Debug\netcoreapp2.1\NewPractike.csproj.CoreCompileInputs.cache
 C:\Users\Витя\shiorat\NewPractike\NewPractike\obj\Debug\netcoreapp2.1\NewPractike.RazorAssemblyInfo.cache
 C:\Users\Витя\shiorat\NewPractike\NewPractike\obj\Debug\netcoreapp2.1\NewPractike.RazorAssemblyInfo.cs

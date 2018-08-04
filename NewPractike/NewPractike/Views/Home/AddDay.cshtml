@@ -8,13 +8,19 @@
 </head>
 <bode>
     Добавление цели
-    <form>
-        <input type="date" name="Date" value="Введите дату">
-        <input type="time" name="Time" value="Введите время">
-        <input type="text" name="Target" value="Введите цель" size="20" maxlength="300">
-    </form>
-    <button>Продолжить</button>
-    <button>Отмена</button>
+    @using (Html.BeginForm("Endadd", "Home", FormMethod.Post))
+    {
+        <form>
+            <input type="datetime" name="Date1" value="XX.XX.XX YY:YY">
+            <input type="text" name="Target1" value="Введите цель" size="20" maxlength="300">
+        </form>
+        <form method="post" action="/api/endadd">
+            <button>Продолжить</button>
+        </form>
+    }
+    <form method="get" action="/api">
+        <button>Отмена</button>
+        </form>
 </bode>
 
 

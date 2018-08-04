@@ -24,7 +24,7 @@ namespace NewPractike
                 new DaysDTO()
                 {
                     Id=2,
-                    Date = new DateTime(2018,08,02),
+                    Date = new DateTime(2019,08,02),
                     Target = "Тест",
                     V=0,
                 }
